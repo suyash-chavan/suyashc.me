@@ -17,7 +17,7 @@ const withTM = require('next-transpile-modules')([
 const nextTranslate = require('next-translate')
 
 const nextConfig = {
-  distDir: '/suyashc.me/docs',
+  distDir: 'docs',
   compress: true,
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
