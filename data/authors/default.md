@@ -3,7 +3,7 @@ name: Suyash Chavan
 avatar: /static/images/profile.png
 occupation: Backend Engineer
 company: Walchand College of Engineering, Sangli
-email: me@suyashc.me
+email: hello@suyashc.me
 twitter: https://twitter.com/_suyashchavan_
 linkedin: https://www.linkedin.com/in/suyashc/
 github: https://github.com/suyash-chavan

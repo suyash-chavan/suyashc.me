@@ -1,5 +1,5 @@
 import useTranslation from 'next-translate/useTranslation'
-import { POSTS_PER_PAGE } from '../../learning'
+import { POSTS_PER_PAGE } from '..'
 import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter, getFileBySlug } from '@/lib/mdx'
@@ -10,7 +10,7 @@ export async function getStaticPaths({ locales, defaultLocale }) {
     await Promise.all(
       locales.map(async (locale) => {
         const otherLocale = locale !== defaultLocale ? locale : ''
-        const totalPosts = await getAllFilesFrontMatter('learning', otherLocale) // don't forget to useotherLocale
+        const totalPosts = await getAllFilesFrontMatter('resources', otherLocale) // don't forget to useotherLocale
         const totalPages = Math.ceil(totalPosts.length / POSTS_PER_PAGE)
         return Array.from({ length: totalPages }, (_, i) => [(i + 1).toString(), locale])
       })
@@ -36,9 +36,9 @@ export async function getStaticProps(context) {
     locale,
   } = context
   const otherLocale = locale !== defaultLocale ? locale : ''
-  const posts = await getAllFilesFrontMatter('learning', otherLocale)
+  const posts = await getAllFilesFrontMatter('resources', otherLocale)
   const pageNumber = parseInt(page)
-  const post = await getFileBySlug('learning', posts[pageNumber - 1].slug, otherLocale)
+  const post = await getFileBySlug('resources', posts[pageNumber - 1].slug, otherLocale)
   const initialDisplayPosts = posts.slice(
     POSTS_PER_PAGE * (pageNumber - 1),
     POSTS_PER_PAGE * pageNumber
@@ -52,7 +52,7 @@ export async function getStaticProps(context) {
   const availableLocales = []
   await locales.forEach(async (ilocal) => {
     const otherLocale = ilocal !== defaultLocale ? ilocal : ''
-    const iAllPosts = await getAllFilesFrontMatter('learning', otherLocale)
+    const iAllPosts = await getAllFilesFrontMatter('resources', otherLocale)
     iAllPosts.forEach(() => {
       if (
         pageNumber <= Math.ceil(iAllPosts.length / POSTS_PER_PAGE) &&
@@ -95,7 +95,7 @@ export default function PostPage({
         post={post}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title={t('common:learning')}
+        title={t('common:resources')}
       />
     </>
   )

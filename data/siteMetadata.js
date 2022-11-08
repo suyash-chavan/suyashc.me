@@ -13,7 +13,7 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'me@suyashc.me',
+  email: 'hello@suyashc.me',
   github: 'https://github.com/suyash-chavan',
   twitter: 'https://twitter.com/_suyashchavan_',
   linkedin: 'https://www.linkedin.com/in/suyashc/',
@@ -21,20 +21,20 @@ const siteMetadata = {
   locale: 'en-US',
   analytics: {
     // supports plausible, simpleAnalytics, umami or googleAnalytics
-    plausibleDataDomain: 'suyashc.me',
-    simpleAnalytics: false,
-    umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
-    googleAnalyticsId: '',
+    // plausibleDataDomain: 'suyashc.me',
+    // simpleAnalytics: false,
+    // umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
+    googleAnalyticsId: 'G-ZNN6HGMPS8',
   },
   newsletter: {
     // supports mailchimp, buttondown, convertkit
     // Please add your .env file and modify it according to your selection
-    provider: '',
+    provider: 'mailchimp',
   },
   comment: {
     // Select a provider and use the environment variables associated to it
     // https://vercel.com/docs/environment-variables
-    provider: '', // supported providers: giscus, utterances, disqus
+    provider: 'giscus', // supported providers: giscus, utterances, disqus
     giscusConfig: {
       // Visit the link below, and follow the steps in the 'configuration' section
       // https://giscus.app/

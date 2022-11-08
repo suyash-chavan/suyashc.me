@@ -48,7 +48,7 @@ export default function ListLearningLayout({
             {title}
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {t('learning:subtitle')}
+            {t('resources:subtitle')}
           </p>
         </div>
         <ul>

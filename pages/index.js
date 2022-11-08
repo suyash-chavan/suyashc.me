@@ -51,9 +51,9 @@ export default function Home({ posts, locale, availableLocales }) {
         <div>
           <div className="pb-2 w-full flex flex-wrap">
             <Card
-              title={t('common:learning')}
-              description={t('learning:description')}
-              href={'/learning'}
+              title={t('common:resources')}
+              description={t('resources:description')}
+              href={'/resources'}
               className="py-4 md:px-4"
             />
             <Card

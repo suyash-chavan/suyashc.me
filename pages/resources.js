@@ -8,8 +8,8 @@ export const POSTS_PER_PAGE = 1
 
 export async function getStaticProps({ locale, defaultLocale, locales }) {
   const otherLocale = locale !== defaultLocale ? locale : ''
-  const posts = await getAllFilesFrontMatter('learning', otherLocale)
-  const post = await getFileBySlug('learning', posts[0].slug, otherLocale)
+  const posts = await getAllFilesFrontMatter('resources', otherLocale)
+  const post = await getFileBySlug('resources', posts[0].slug, otherLocale)
   const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
   const pagination = {
     currentPage: 1,
@@ -33,7 +33,7 @@ export default function Learning({
   return (
     <>
       <PageSEO
-        title={`${t('common:learning')} - ${siteMetadata.author}`}
+        title={`${t('common:resources')} - ${siteMetadata.author}`}
         description={siteMetadata.description[locale]}
         availableLocales={availableLocales}
       />
@@ -42,7 +42,7 @@ export default function Learning({
         post={post}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title={t('common:learning')}
+        title={t('common:resources')}
       />
     </>
   )
