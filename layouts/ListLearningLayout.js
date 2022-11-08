@@ -76,7 +76,7 @@ export default function ListLearningLayout({
         <Pagination
           currentPage={pagination.currentPage}
           totalPages={pagination.totalPages}
-          pageSlug={'learning'}
+          pageSlug={'resources'}
         />
       )}
     </>
