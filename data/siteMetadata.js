@@ -9,7 +9,7 @@ const siteMetadata = {
   },
   language: 'en-us',
   siteUrl: 'https://suyashc.me',
-  siteRepo: 'https://github.com/marceloavf/suyash-chavan.github.io',
+  siteRepo: 'https://github.com/suyash-chavan/suyashc.me',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
