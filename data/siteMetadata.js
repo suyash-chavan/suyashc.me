@@ -1,11 +1,11 @@
 const siteMetadata = {
   title: {
-    en: 'Suyash Chavan – Backend Engineer',
+    en: 'Suyash Chavan – Software Engineer',
   },
   author: 'Suyash Chavan',
   headerTitle: { en: 'Personal Website' },
   description: {
-    en: 'A Backend Engineer that code for passion and designs system for fun.',
+    en: 'A Software Engineer that codes for passion and hacks for fun.',
   },
   language: 'en-us',
   siteUrl: 'https://suyashc.me',

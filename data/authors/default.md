@@ -10,12 +10,12 @@ github: https://github.com/suyash-chavan
 instagram: https://www.instagram.com/suyaash.chavan/
 ---
 
-I'm a Backend Developer who is passionate about DevOps. I spend time creating/experimenting on systems using multiple strategies and thinking about their throughput.
+I'm a Software Engineer who is passionate about Backend and DevOps. I spend time creating/experimenting on systems using strategies and their throughput. In free time I play CTFs and Competitive Programming Challenges with my friends.
 
-Besides programming, I also enjoy playing video games, listening to heavy & melodic music, watching series & movies 😊.
+Besides programming, I also enjoy playing video games(especially Minecraft), listening to heavy & melodic music(mostly Eminem), watching netflix and gymming 😊.
 
 ## Timeline
 
-### 2023
+### Jan 2023
 
 - Intern at Druva
